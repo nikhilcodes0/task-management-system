@@ -1,0 +1,24 @@
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.vbproj.AssemblyReference.cache
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.vbproj.GenerateResource.cache
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.AssemblyInfoInputs.cache
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.AssemblyInfo.vb
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.vbproj.CoreCompileInputs.cache
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.sourcelink.json
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Task Management System.exe
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Task Management System.deps.json
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Task Management System.runtimeconfig.json
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Task Management System.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Task Management System.pdb
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\MaterialSkin.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.vbproj.CopyComplete
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\refint\Task Management System.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.pdb
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task Management System.genruntimeconfig.cache
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\ref\Task Management System.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.LoginForm.resources
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.MenuBAr.resources

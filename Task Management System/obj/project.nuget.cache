@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yH9q+gniC2RslF+3yBqkjuL1HRbm21H0ZRKhUkqfim3pa41W1HmQ+W9oaYk4L73hnZru+/qmvX/W187+QMW9FA==",
+  "dgSpecHash": "3djaLFnF5hxhlpOzvj9aliZBeyaXZiN8u1K4HD4E4nO76sM9r9x8i+d+ruQUpxWCr9txx5lVRnJ0WAk/xM8D/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\H4WK\\source\\repos\\Task Management System\\Task Management System\\Task Management System.vbproj",
   "expectedPackageFiles": [
-    "C:\\Users\\H4WK\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512"
+    "C:\\Users\\H4WK\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\H4WK\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
+    "C:\\Users\\H4WK\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\H4WK\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
