@@ -1,7 +1,18 @@
 ﻿Public Class MenuBAr
-    Private Sub MaterialTextBox1_TextChanged(sender As Object, e As EventArgs) Handles MaterialTextBox1.TextChanged
+    Private Sub MenuBAr_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub TaskEntryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TaskEntryToolStripMenuItem.Click
+        TaskEntry.Show()
+    End Sub
+
+    Private Sub TaskDetailsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TaskDetailsToolStripMenuItem.Click
+
+    End Sub
+    'Private Sub MaterialTextBox1_TextChanged(sender As Object, e As EventArgs) Handles MaterialTextBox1.TextChanged
+
+    'End Sub
     'Private Sub MenuBAr_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     'End Sub

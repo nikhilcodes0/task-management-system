@@ -7,5 +7,14 @@
     <Compile Update="MenuBAr.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MyTasks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TaskEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TaskEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

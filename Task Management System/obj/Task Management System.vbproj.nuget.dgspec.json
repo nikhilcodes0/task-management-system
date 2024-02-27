@@ -47,6 +47,10 @@
             "MaterialSkin.2": {
               "target": "Package",
               "version": "[2.3.1, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.5, )"
             }
           },
           "imports": [
