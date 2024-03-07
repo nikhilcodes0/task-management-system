@@ -33,6 +33,8 @@ Partial Class TaskEdit
         MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         MaterialComboBox4 = New MaterialSkin.Controls.MaterialComboBox()
         MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
+        MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         SuspendLayout()
         ' 
         ' MaterialLabel1
@@ -66,7 +68,7 @@ Partial Class TaskEdit
         MaterialComboBox1.DropDownHeight = 174
         MaterialComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         MaterialComboBox1.DropDownWidth = 121
-        MaterialComboBox1.Font = New Font("Roboto Medium", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        MaterialComboBox1.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
         MaterialComboBox1.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
         MaterialComboBox1.FormattingEnabled = True
         MaterialComboBox1.IntegralHeight = False
@@ -75,7 +77,7 @@ Partial Class TaskEdit
         MaterialComboBox1.MaxDropDownItems = 4
         MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox1.Name = "MaterialComboBox1"
-        MaterialComboBox1.Size = New Size(347, 49)
+        MaterialComboBox1.Size = New Size(351, 49)
         MaterialComboBox1.StartIndex = 0
         MaterialComboBox1.TabIndex = 2
         ' 
@@ -109,7 +111,7 @@ Partial Class TaskEdit
         MaterialMultiLineTextBox21.SelectionLength = 0
         MaterialMultiLineTextBox21.SelectionStart = 0
         MaterialMultiLineTextBox21.ShortcutsEnabled = True
-        MaterialMultiLineTextBox21.Size = New Size(347, 100)
+        MaterialMultiLineTextBox21.Size = New Size(351, 64)
         MaterialMultiLineTextBox21.TabIndex = 4
         MaterialMultiLineTextBox21.TabStop = False
         MaterialMultiLineTextBox21.TextAlign = HorizontalAlignment.Left
@@ -145,7 +147,7 @@ Partial Class TaskEdit
         MaterialComboBox2.MaxDropDownItems = 4
         MaterialComboBox2.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox2.Name = "MaterialComboBox2"
-        MaterialComboBox2.Size = New Size(347, 49)
+        MaterialComboBox2.Size = New Size(351, 49)
         MaterialComboBox2.StartIndex = 0
         MaterialComboBox2.TabIndex = 6
         ' 
@@ -168,7 +170,7 @@ Partial Class TaskEdit
         MaterialComboBox3.MaxDropDownItems = 4
         MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox3.Name = "MaterialComboBox3"
-        MaterialComboBox3.Size = New Size(347, 49)
+        MaterialComboBox3.Size = New Size(351, 49)
         MaterialComboBox3.StartIndex = 0
         MaterialComboBox3.TabIndex = 8
         ' 
@@ -203,7 +205,7 @@ Partial Class TaskEdit
         MaterialComboBox4.MaxDropDownItems = 4
         MaterialComboBox4.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox4.Name = "MaterialComboBox4"
-        MaterialComboBox4.Size = New Size(347, 49)
+        MaterialComboBox4.Size = New Size(351, 49)
         MaterialComboBox4.StartIndex = 0
         MaterialComboBox4.TabIndex = 10
         ' 
@@ -219,11 +221,53 @@ Partial Class TaskEdit
         MaterialLabel5.TabIndex = 9
         MaterialLabel5.Text = "Task Priority"
         ' 
+        ' MaterialButton1
+        ' 
+        MaterialButton1.AutoSize = False
+        MaterialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default
+        MaterialButton1.Depth = 0
+        MaterialButton1.HighEmphasis = True
+        MaterialButton1.Icon = Nothing
+        MaterialButton1.Location = New Point(192, 733)
+        MaterialButton1.Margin = New Padding(4, 6, 4, 6)
+        MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialButton1.Name = "MaterialButton1"
+        MaterialButton1.NoAccentTextColor = Color.Empty
+        MaterialButton1.Size = New Size(130, 36)
+        MaterialButton1.TabIndex = 11
+        MaterialButton1.Text = "Add Task"
+        MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        MaterialButton1.UseAccentColor = False
+        MaterialButton1.UseVisualStyleBackColor = True
+        ' 
+        ' MaterialButton2
+        ' 
+        MaterialButton2.AutoSize = False
+        MaterialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        MaterialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default
+        MaterialButton2.Depth = 0
+        MaterialButton2.HighEmphasis = True
+        MaterialButton2.Icon = Nothing
+        MaterialButton2.Location = New Point(423, 733)
+        MaterialButton2.Margin = New Padding(4, 6, 4, 6)
+        MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialButton2.Name = "MaterialButton2"
+        MaterialButton2.NoAccentTextColor = Color.Empty
+        MaterialButton2.Size = New Size(158, 36)
+        MaterialButton2.TabIndex = 12
+        MaterialButton2.Text = "Cancel"
+        MaterialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        MaterialButton2.UseAccentColor = False
+        MaterialButton2.UseVisualStyleBackColor = True
+        ' 
         ' TaskEdit
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 686)
+        ClientSize = New Size(858, 828)
+        Controls.Add(MaterialButton2)
+        Controls.Add(MaterialButton1)
         Controls.Add(MaterialComboBox4)
         Controls.Add(MaterialLabel5)
         Controls.Add(MaterialComboBox3)
@@ -252,4 +296,6 @@ Partial Class TaskEdit
     Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialComboBox4 As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
 End Class

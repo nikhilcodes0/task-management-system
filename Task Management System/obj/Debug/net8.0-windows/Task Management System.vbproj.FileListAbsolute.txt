@@ -56,3 +56,5 @@ C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Deb
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.TaskEntry.resources
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.MyTasks.resources
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.TaskEdit.resources

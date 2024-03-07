@@ -31,6 +31,9 @@ Partial Class TaskEntry
         MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         MaterialComboBox3 = New MaterialSkin.Controls.MaterialComboBox()
         Label1 = New Label()
+        MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
+        MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
         SuspendLayout()
         ' 
         ' MaterialLabel1
@@ -164,7 +167,7 @@ Partial Class TaskEntry
         MaterialComboBox3.FormattingEnabled = True
         MaterialComboBox3.IntegralHeight = False
         MaterialComboBox3.ItemHeight = 43
-        MaterialComboBox3.Items.AddRange(New Object() {"Not Started", "In Progress", "Done"})
+        MaterialComboBox3.Items.AddRange(New Object() {"Yet to Start", "In Progress", "Done"})
         MaterialComboBox3.Location = New Point(185, 483)
         MaterialComboBox3.MaxDropDownItems = 4
         MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
@@ -183,11 +186,67 @@ Partial Class TaskEntry
         Label1.TabIndex = 10
         Label1.Text = "Task Entry Form"
         ' 
+        ' MaterialButton1
+        ' 
+        MaterialButton1.AutoSize = False
+        MaterialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default
+        MaterialButton1.Depth = 0
+        MaterialButton1.HighEmphasis = True
+        MaterialButton1.Icon = Nothing
+        MaterialButton1.Location = New Point(216, 614)
+        MaterialButton1.Margin = New Padding(4, 6, 4, 6)
+        MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialButton1.Name = "MaterialButton1"
+        MaterialButton1.NoAccentTextColor = Color.Empty
+        MaterialButton1.Size = New Size(141, 36)
+        MaterialButton1.TabIndex = 11
+        MaterialButton1.Text = "Add Task"
+        MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        MaterialButton1.UseAccentColor = False
+        MaterialButton1.UseVisualStyleBackColor = True
+        ' 
+        ' MaterialButton2
+        ' 
+        MaterialButton2.AutoSize = False
+        MaterialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        MaterialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default
+        MaterialButton2.Depth = 0
+        MaterialButton2.HighEmphasis = True
+        MaterialButton2.Icon = Nothing
+        MaterialButton2.Location = New Point(408, 614)
+        MaterialButton2.Margin = New Padding(4, 6, 4, 6)
+        MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialButton2.Name = "MaterialButton2"
+        MaterialButton2.NoAccentTextColor = Color.Empty
+        MaterialButton2.Size = New Size(158, 36)
+        MaterialButton2.TabIndex = 12
+        MaterialButton2.Text = "Cancel"
+        MaterialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        MaterialButton2.UseAccentColor = False
+        MaterialButton2.UseVisualStyleBackColor = True
+        ' 
+        ' MaterialLabel5
+        ' 
+        MaterialLabel5.AutoSize = True
+        MaterialLabel5.Depth = 0
+        MaterialLabel5.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel5.ForeColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
+        MaterialLabel5.Location = New Point(307, 561)
+        MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel5.Name = "MaterialLabel5"
+        MaterialLabel5.Size = New Size(183, 19)
+        MaterialLabel5.TabIndex = 13
+        MaterialLabel5.Text = "Task Added Successfully!"
+        ' 
         ' TaskEntry
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(762, 621)
+        ClientSize = New Size(783, 698)
+        Controls.Add(MaterialLabel5)
+        Controls.Add(MaterialButton2)
+        Controls.Add(MaterialButton1)
         Controls.Add(Label1)
         Controls.Add(MaterialComboBox3)
         Controls.Add(MaterialLabel4)
@@ -212,4 +271,7 @@ Partial Class TaskEntry
     Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialComboBox3 As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
 End Class

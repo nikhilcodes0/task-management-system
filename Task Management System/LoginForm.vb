@@ -6,22 +6,21 @@ Public Class LoginForm
     Dim constr As String = "Data Source=DESKTOP-49MOB3F;Initial Catalog=Task Management System;Integrated Security=True;Encrypt=False;Trust Server Certificate=True"
     Dim adapter As New SqlDataAdapter
 
-    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs) Handles MaterialButton2.Click
+    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs)
         Try
             Using con As New SqlConnection(constr)
                 con.Open()
-                Dim query As String = "SELECT UserID FROM Users WHERE Username='" & Username.Text & "'AND UserPwd='" & Password.Text & "'"
+                Dim query = "SELECT UserID FROM Users WHERE Username='" & Username.Text & "'AND UserPwd='" & Password.Text & "'"
 
                 cmd = New SqlCommand(query, con)
                 adapter = New SqlDataAdapter(cmd)
                 Dim ds As New DataSet
                 adapter.Fill(ds)
-                If (ds.Tables(0).Rows.Count > 0) Then
-                    Dim userID As Integer = DirectCast(cmd.ExecuteScalar(), Integer)
-                    Dim loggedInUserID As Integer = userID
+                If ds.Tables(0).Rows.Count > 0 Then
+                    Dim userID As Integer = cmd.ExecuteScalar()
+                    Dim loggedInUserID = userID
+                    MyTasks.MaterialLabel1.Text = loggedInUserID
                     MenuBAr.Show()
-                    MsgBox(loggedInUserID)
-
 
                     'Me.Hide()
 
@@ -36,8 +35,8 @@ Public Class LoginForm
 
     End Sub
 
-    Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
-        Me.Close()
+    Private Sub Cancel_Click(sender As Object, e As EventArgs)
+        Close()
 
     End Sub
 

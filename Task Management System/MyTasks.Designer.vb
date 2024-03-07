@@ -25,12 +25,9 @@ Partial Class MyTasks
         MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
         DataGridView1 = New DataGridView()
-        TaskID = New DataGridViewTextBoxColumn()
-        TaskDesc = New DataGridViewTextBoxColumn()
-        User = New DataGridViewTextBoxColumn()
-        TaskStatus = New DataGridViewTextBoxColumn()
-        TaskPriority = New DataGridViewTextBoxColumn()
         Label1 = New Label()
+        MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -76,54 +73,56 @@ Partial Class MyTasks
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        DataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {TaskID, TaskDesc, User, TaskStatus, TaskPriority})
-        DataGridView1.Location = New Point(104, 145)
+        DataGridView1.Location = New Point(170, 137)
         DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(593, 143)
+        DataGridView1.Size = New Size(501, 143)
         DataGridView1.TabIndex = 5
-        ' 
-        ' TaskID
-        ' 
-        TaskID.HeaderText = "TaskID"
-        TaskID.Name = "TaskID"
-        ' 
-        ' TaskDesc
-        ' 
-        TaskDesc.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        TaskDesc.HeaderText = "Task Description"
-        TaskDesc.Name = "TaskDesc"
-        ' 
-        ' User
-        ' 
-        User.HeaderText = "Assigned To"
-        User.Name = "User"
-        ' 
-        ' TaskStatus
-        ' 
-        TaskStatus.HeaderText = "Task Status"
-        TaskStatus.Name = "TaskStatus"
-        ' 
-        ' TaskPriority
-        ' 
-        TaskPriority.HeaderText = "Task Priority"
-        TaskPriority.Name = "TaskPriority"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 22F, FontStyle.Underline)
-        Label1.Location = New Point(319, 66)
+        Label1.Location = New Point(349, 68)
         Label1.Name = "Label1"
         Label1.Size = New Size(137, 41)
         Label1.TabIndex = 4
         Label1.Text = "My Tasks"
+        ' 
+        ' MaterialLabel1
+        ' 
+        MaterialLabel1.AutoSize = True
+        MaterialLabel1.Depth = 0
+        MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel1.Location = New Point(58, 45)
+        MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel1.Name = "MaterialLabel1"
+        MaterialLabel1.Size = New Size(51, 19)
+        MaterialLabel1.TabIndex = 8
+        MaterialLabel1.Text = "Hi User"
+        ' 
+        ' MaterialLabel2
+        ' 
+        MaterialLabel2.AutoSize = True
+        MaterialLabel2.Depth = 0
+        MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel2.Location = New Point(322, 193)
+        MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel2.Name = "MaterialLabel2"
+        MaterialLabel2.Size = New Size(184, 19)
+        MaterialLabel2.TabIndex = 9
+        MaterialLabel2.Text = "You dont have any Tasks!"
+        MaterialLabel2.Visible = False
         ' 
         ' MyTasks
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(MaterialLabel2)
+        Controls.Add(MaterialLabel1)
         Controls.Add(MaterialButton2)
         Controls.Add(MaterialButton1)
         Controls.Add(DataGridView1)
@@ -138,10 +137,7 @@ Partial Class MyTasks
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TaskID As DataGridViewTextBoxColumn
-    Friend WithEvents TaskDesc As DataGridViewTextBoxColumn
-    Friend WithEvents User As DataGridViewTextBoxColumn
-    Friend WithEvents TaskStatus As DataGridViewTextBoxColumn
-    Friend WithEvents TaskPriority As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
 End Class
