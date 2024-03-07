@@ -43,4 +43,9 @@ Public Class LoginForm
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
+        SignUp.Show()
+        Me.Hide()
+    End Sub
 End Class

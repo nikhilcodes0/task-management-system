@@ -39,7 +39,7 @@ Partial Class SignUp
         MaterialLabel1.AutoSize = True
         MaterialLabel1.Depth = 0
         MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(188, 91)
+        MaterialLabel1.Location = New Point(251, 87)
         MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel1.Name = "MaterialLabel1"
         MaterialLabel1.Size = New Size(80, 19)
@@ -50,7 +50,7 @@ Partial Class SignUp
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19F, FontStyle.Bold)
-        Label1.Location = New Point(250, 9)
+        Label1.Location = New Point(266, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(268, 36)
         Label1.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class SignUp
         MaterialTextBox1.Depth = 0
         MaterialTextBox1.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox1.LeadingIcon = Nothing
-        MaterialTextBox1.Location = New Point(274, 78)
+        MaterialTextBox1.Location = New Point(337, 74)
         MaterialTextBox1.MaxLength = 50
         MaterialTextBox1.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox1.Multiline = False
@@ -80,11 +80,12 @@ Partial Class SignUp
         MaterialTextBox2.Depth = 0
         MaterialTextBox2.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox2.LeadingIcon = Nothing
-        MaterialTextBox2.Location = New Point(274, 169)
+        MaterialTextBox2.Location = New Point(337, 165)
         MaterialTextBox2.MaxLength = 50
         MaterialTextBox2.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox2.Multiline = False
         MaterialTextBox2.Name = "MaterialTextBox2"
+        MaterialTextBox2.Password = True
         MaterialTextBox2.Size = New Size(244, 50)
         MaterialTextBox2.TabIndex = 4
         MaterialTextBox2.Text = ""
@@ -95,7 +96,7 @@ Partial Class SignUp
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(160, 182)
+        MaterialLabel2.Location = New Point(223, 178)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
         MaterialLabel2.Size = New Size(108, 19)
@@ -109,11 +110,12 @@ Partial Class SignUp
         MaterialTextBox3.Depth = 0
         MaterialTextBox3.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox3.LeadingIcon = Nothing
-        MaterialTextBox3.Location = New Point(274, 249)
+        MaterialTextBox3.Location = New Point(337, 245)
         MaterialTextBox3.MaxLength = 50
         MaterialTextBox3.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox3.Multiline = False
         MaterialTextBox3.Name = "MaterialTextBox3"
+        MaterialTextBox3.Password = True
         MaterialTextBox3.Size = New Size(244, 50)
         MaterialTextBox3.TabIndex = 6
         MaterialTextBox3.Text = ""
@@ -124,7 +126,7 @@ Partial Class SignUp
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(108, 262)
+        MaterialLabel3.Location = New Point(171, 258)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
         MaterialLabel3.Size = New Size(160, 19)
@@ -139,7 +141,7 @@ Partial Class SignUp
         MaterialButton1.Depth = 0
         MaterialButton1.HighEmphasis = True
         MaterialButton1.Icon = Nothing
-        MaterialButton1.Location = New Point(238, 362)
+        MaterialButton1.Location = New Point(251, 362)
         MaterialButton1.Margin = New Padding(4, 6, 4, 6)
         MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton1.Name = "MaterialButton1"
@@ -159,7 +161,7 @@ Partial Class SignUp
         MaterialButton2.Depth = 0
         MaterialButton2.HighEmphasis = True
         MaterialButton2.Icon = Nothing
-        MaterialButton2.Location = New Point(419, 362)
+        MaterialButton2.Location = New Point(432, 362)
         MaterialButton2.Margin = New Padding(4, 6, 4, 6)
         MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton2.Name = "MaterialButton2"
