@@ -59,3 +59,5 @@ C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Deb
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.MyTasks.resources
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.TaskEdit.resources
 C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.SignUp.resources
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.Resources.resources
+C:\Users\H4WK\source\repos\Task Management System\Task Management System\obj\Debug\net8.0-windows\Task_Management_System.IncompleteTasks.resources

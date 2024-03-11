@@ -22,6 +22,7 @@ Partial Class SignUp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignUp))
         MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Label1 = New Label()
         MaterialTextBox1 = New MaterialSkin.Controls.MaterialTextBox()
@@ -32,6 +33,8 @@ Partial Class SignUp
         MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
         MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MaterialLabel1
@@ -39,7 +42,7 @@ Partial Class SignUp
         MaterialLabel1.AutoSize = True
         MaterialLabel1.Depth = 0
         MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(251, 87)
+        MaterialLabel1.Location = New Point(443, 90)
         MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel1.Name = "MaterialLabel1"
         MaterialLabel1.Size = New Size(80, 19)
@@ -50,7 +53,7 @@ Partial Class SignUp
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19F, FontStyle.Bold)
-        Label1.Location = New Point(266, 9)
+        Label1.Location = New Point(458, 12)
         Label1.Name = "Label1"
         Label1.Size = New Size(268, 36)
         Label1.TabIndex = 1
@@ -63,7 +66,7 @@ Partial Class SignUp
         MaterialTextBox1.Depth = 0
         MaterialTextBox1.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox1.LeadingIcon = Nothing
-        MaterialTextBox1.Location = New Point(337, 74)
+        MaterialTextBox1.Location = New Point(529, 77)
         MaterialTextBox1.MaxLength = 50
         MaterialTextBox1.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox1.Multiline = False
@@ -80,7 +83,7 @@ Partial Class SignUp
         MaterialTextBox2.Depth = 0
         MaterialTextBox2.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox2.LeadingIcon = Nothing
-        MaterialTextBox2.Location = New Point(337, 165)
+        MaterialTextBox2.Location = New Point(529, 168)
         MaterialTextBox2.MaxLength = 50
         MaterialTextBox2.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox2.Multiline = False
@@ -96,7 +99,7 @@ Partial Class SignUp
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(223, 178)
+        MaterialLabel2.Location = New Point(415, 181)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
         MaterialLabel2.Size = New Size(108, 19)
@@ -110,13 +113,13 @@ Partial Class SignUp
         MaterialTextBox3.Depth = 0
         MaterialTextBox3.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialTextBox3.LeadingIcon = Nothing
-        MaterialTextBox3.Location = New Point(337, 245)
+        MaterialTextBox3.Location = New Point(569, 248)
         MaterialTextBox3.MaxLength = 50
         MaterialTextBox3.MouseState = MaterialSkin.MouseState.OUT
         MaterialTextBox3.Multiline = False
         MaterialTextBox3.Name = "MaterialTextBox3"
         MaterialTextBox3.Password = True
-        MaterialTextBox3.Size = New Size(244, 50)
+        MaterialTextBox3.Size = New Size(204, 50)
         MaterialTextBox3.TabIndex = 6
         MaterialTextBox3.Text = ""
         MaterialTextBox3.TrailingIcon = Nothing
@@ -126,7 +129,7 @@ Partial Class SignUp
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(171, 258)
+        MaterialLabel3.Location = New Point(403, 262)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
         MaterialLabel3.Size = New Size(160, 19)
@@ -141,7 +144,7 @@ Partial Class SignUp
         MaterialButton1.Depth = 0
         MaterialButton1.HighEmphasis = True
         MaterialButton1.Icon = Nothing
-        MaterialButton1.Location = New Point(251, 362)
+        MaterialButton1.Location = New Point(443, 365)
         MaterialButton1.Margin = New Padding(4, 6, 4, 6)
         MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton1.Name = "MaterialButton1"
@@ -161,7 +164,7 @@ Partial Class SignUp
         MaterialButton2.Depth = 0
         MaterialButton2.HighEmphasis = True
         MaterialButton2.Icon = Nothing
-        MaterialButton2.Location = New Point(432, 362)
+        MaterialButton2.Location = New Point(624, 365)
         MaterialButton2.Margin = New Padding(4, 6, 4, 6)
         MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton2.Name = "MaterialButton2"
@@ -179,18 +182,30 @@ Partial Class SignUp
         MaterialLabel4.Depth = 0
         MaterialLabel4.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialLabel4.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        MaterialLabel4.Location = New Point(306, 324)
+        MaterialLabel4.Location = New Point(498, 327)
         MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel4.Name = "MaterialLabel4"
         MaterialLabel4.Size = New Size(164, 19)
         MaterialLabel4.TabIndex = 9
         MaterialLabel4.Text = "Please fill all the fields!"
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(-1, 0)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(358, 450)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 10
+        PictureBox1.TabStop = False
+        ' 
         ' SignUp
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(235), CByte(245), CByte(238))
         ClientSize = New Size(800, 450)
+        Controls.Add(PictureBox1)
         Controls.Add(MaterialLabel4)
         Controls.Add(MaterialButton2)
         Controls.Add(MaterialButton1)
@@ -203,6 +218,7 @@ Partial Class SignUp
         Controls.Add(MaterialLabel1)
         Name = "SignUp"
         Text = "SignUp"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -217,4 +233,5 @@ Partial Class SignUp
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

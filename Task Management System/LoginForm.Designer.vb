@@ -22,6 +22,7 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
         Cancel = New Button()
         MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
@@ -31,11 +32,13 @@ Partial Class LoginForm
         MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
         MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Cancel
         ' 
-        Cancel.Location = New Point(432, 310)
+        Cancel.Location = New Point(631, 291)
         Cancel.Name = "Cancel"
         Cancel.Size = New Size(136, 37)
         Cancel.TabIndex = 15
@@ -47,7 +50,7 @@ Partial Class LoginForm
         MaterialLabel4.AutoSize = True
         MaterialLabel4.Depth = 0
         MaterialLabel4.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel4.Location = New Point(176, 219)
+        MaterialLabel4.Location = New Point(426, 201)
         MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel4.Name = "MaterialLabel4"
         MaterialLabel4.Size = New Size(71, 19)
@@ -59,7 +62,7 @@ Partial Class LoginForm
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(176, 130)
+        MaterialLabel2.Location = New Point(426, 112)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
         MaterialLabel2.Size = New Size(72, 19)
@@ -70,7 +73,7 @@ Partial Class LoginForm
         ' 
         MaterialLabel1.Depth = 0
         MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(311, 51)
+        MaterialLabel1.Location = New Point(521, 32)
         MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel1.Name = "MaterialLabel1"
         MaterialLabel1.Size = New Size(158, 21)
@@ -86,7 +89,7 @@ Partial Class LoginForm
         Password.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         Password.HideSelection = True
         Password.LeadingIcon = Nothing
-        Password.Location = New Point(278, 204)
+        Password.Location = New Point(528, 186)
         Password.MaxLength = 32767
         Password.MouseState = MaterialSkin.MouseState.OUT
         Password.Name = "Password"
@@ -114,7 +117,7 @@ Partial Class LoginForm
         Username.Font = New Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
         Username.HideSelection = True
         Username.LeadingIcon = Nothing
-        Username.Location = New Point(278, 117)
+        Username.Location = New Point(528, 99)
         Username.MaxLength = 32767
         Username.MouseState = MaterialSkin.MouseState.OUT
         Username.Name = "Username"
@@ -141,7 +144,7 @@ Partial Class LoginForm
         MaterialButton2.Depth = 0
         MaterialButton2.HighEmphasis = True
         MaterialButton2.Icon = Nothing
-        MaterialButton2.Location = New Point(220, 310)
+        MaterialButton2.Location = New Point(443, 291)
         MaterialButton2.Margin = New Padding(4, 6, 4, 6)
         MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton2.Name = "MaterialButton2"
@@ -158,7 +161,7 @@ Partial Class LoginForm
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(244, 387)
+        MaterialLabel3.Location = New Point(454, 382)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
         MaterialLabel3.Size = New Size(192, 19)
@@ -173,7 +176,7 @@ Partial Class LoginForm
         MaterialButton1.Depth = 0
         MaterialButton1.HighEmphasis = True
         MaterialButton1.Icon = Nothing
-        MaterialButton1.Location = New Point(443, 377)
+        MaterialButton1.Location = New Point(653, 372)
         MaterialButton1.Margin = New Padding(4, 6, 4, 6)
         MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton1.Name = "MaterialButton1"
@@ -185,12 +188,23 @@ Partial Class LoginForm
         MaterialButton1.UseAccentColor = False
         MaterialButton1.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(1, -3)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(379, 456)
+        PictureBox1.TabIndex = 18
+        PictureBox1.TabStop = False
+        ' 
         ' LoginForm
         ' 
+        AcceptButton = MaterialButton2
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(235), CByte(245), CByte(238))
         ClientSize = New Size(800, 450)
+        Controls.Add(PictureBox1)
         Controls.Add(MaterialButton1)
         Controls.Add(MaterialLabel3)
         Controls.Add(Cancel)
@@ -202,6 +216,7 @@ Partial Class LoginForm
         Controls.Add(MaterialButton2)
         Name = "LoginForm"
         Text = "Form1"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -215,5 +230,6 @@ Partial Class LoginForm
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class

@@ -6,7 +6,8 @@ Public Class LoginForm
     Dim constr As String = "Data Source=DESKTOP-49MOB3F;Initial Catalog=Task Management System;Integrated Security=True;Encrypt=False;Trust Server Certificate=True"
     Dim adapter As New SqlDataAdapter
 
-    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs)
+
+    Private Sub MaterialButton2_Click_1(sender As Object, e As EventArgs) Handles MaterialButton2.Click
         Try
             Using con As New SqlConnection(constr)
                 con.Open()
@@ -19,10 +20,11 @@ Public Class LoginForm
                 If ds.Tables(0).Rows.Count > 0 Then
                     Dim userID As Integer = cmd.ExecuteScalar()
                     Dim loggedInUserID = userID
-                    MyTasks.MaterialLabel1.Text = loggedInUserID
+                    Dim session As UserSession = UserSession.GetInstance()
+                    session.UserID = loggedInUserID
                     MenuBAr.Show()
 
-                    'Me.Hide()
+                    Me.Hide()
 
                 Else
                     MessageBox.Show("Invalid Username or Password!")
@@ -46,6 +48,10 @@ Public Class LoginForm
 
     Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
         SignUp.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
+
+
+
+
 End Class

@@ -20,19 +20,28 @@ Public Class MenuBAr
                 MaterialLabel1.Visible = "True"
             Else
                 MaterialLabel1.Visible = "False"
-                DataGridView1.DataSource = dt
+                Guna2DataGridView1.DataSource = dt
             End If
         End Using
     End Sub
 
     Private Sub TaskEntryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TaskEntryToolStripMenuItem.Click
         TaskEntry.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub TaskDetailsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TaskDetailsToolStripMenuItem.Click
         MyTasks.Show()
-        Me.Hide()
+        Me.Close()
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub IncompleteTasksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IncompleteTasksToolStripMenuItem.Click
+        IncompleteTasks.Show()
+        Me.Close()
     End Sub
     'Private Sub MaterialTextBox1_TextChanged(sender As Object, e As EventArgs) Handles MaterialTextBox1.TextChanged
 

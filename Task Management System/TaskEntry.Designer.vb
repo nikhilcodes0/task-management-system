@@ -22,6 +22,9 @@ Partial Class TaskEntry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TaskEntry))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
@@ -34,6 +37,8 @@ Partial Class TaskEntry
         MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
         MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
+        Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MaterialLabel1
@@ -41,7 +46,7 @@ Partial Class TaskEntry
         MaterialLabel1.AutoSize = True
         MaterialLabel1.Depth = 0
         MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(185, 302)
+        MaterialLabel1.Location = New Point(612, 308)
         MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel1.Name = "MaterialLabel1"
         MaterialLabel1.Size = New Size(120, 19)
@@ -53,7 +58,7 @@ Partial Class TaskEntry
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(185, 98)
+        MaterialLabel2.Location = New Point(612, 104)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
         MaterialLabel2.Size = New Size(90, 19)
@@ -75,7 +80,7 @@ Partial Class TaskEntry
         MaterialComboBox1.IntegralHeight = False
         MaterialComboBox1.ItemHeight = 43
         MaterialComboBox1.Items.AddRange(New Object() {"low", "medium", "ASAP"})
-        MaterialComboBox1.Location = New Point(185, 120)
+        MaterialComboBox1.Location = New Point(612, 126)
         MaterialComboBox1.MaxDropDownItems = 4
         MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox1.Name = "MaterialComboBox1"
@@ -88,7 +93,7 @@ Partial Class TaskEntry
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(185, 199)
+        MaterialLabel3.Location = New Point(612, 205)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
         MaterialLabel3.Size = New Size(72, 19)
@@ -109,7 +114,7 @@ Partial Class TaskEntry
         MaterialComboBox2.FormattingEnabled = True
         MaterialComboBox2.IntegralHeight = False
         MaterialComboBox2.ItemHeight = 43
-        MaterialComboBox2.Location = New Point(185, 221)
+        MaterialComboBox2.Location = New Point(612, 227)
         MaterialComboBox2.MaxDropDownItems = 4
         MaterialComboBox2.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox2.Name = "MaterialComboBox2"
@@ -124,7 +129,7 @@ Partial Class TaskEntry
         MaterialMultiLineTextBox21.CharacterCasing = CharacterCasing.Normal
         MaterialMultiLineTextBox21.Depth = 0
         MaterialMultiLineTextBox21.HideSelection = True
-        MaterialMultiLineTextBox21.Location = New Point(185, 324)
+        MaterialMultiLineTextBox21.Location = New Point(612, 330)
         MaterialMultiLineTextBox21.MaxLength = 32767
         MaterialMultiLineTextBox21.MouseState = MaterialSkin.MouseState.OUT
         MaterialMultiLineTextBox21.Name = "MaterialMultiLineTextBox21"
@@ -146,7 +151,7 @@ Partial Class TaskEntry
         MaterialLabel4.AutoSize = True
         MaterialLabel4.Depth = 0
         MaterialLabel4.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel4.Location = New Point(185, 461)
+        MaterialLabel4.Location = New Point(612, 467)
         MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel4.Name = "MaterialLabel4"
         MaterialLabel4.Size = New Size(86, 19)
@@ -168,7 +173,7 @@ Partial Class TaskEntry
         MaterialComboBox3.IntegralHeight = False
         MaterialComboBox3.ItemHeight = 43
         MaterialComboBox3.Items.AddRange(New Object() {"Yet to Start", "In Progress", "Done"})
-        MaterialComboBox3.Location = New Point(185, 483)
+        MaterialComboBox3.Location = New Point(612, 489)
         MaterialComboBox3.MaxDropDownItems = 4
         MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox3.Name = "MaterialComboBox3"
@@ -180,7 +185,7 @@ Partial Class TaskEntry
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19F, FontStyle.Underline)
-        Label1.Location = New Point(286, 26)
+        Label1.Location = New Point(713, 32)
         Label1.Name = "Label1"
         Label1.Size = New Size(195, 36)
         Label1.TabIndex = 10
@@ -194,7 +199,7 @@ Partial Class TaskEntry
         MaterialButton1.Depth = 0
         MaterialButton1.HighEmphasis = True
         MaterialButton1.Icon = Nothing
-        MaterialButton1.Location = New Point(216, 614)
+        MaterialButton1.Location = New Point(643, 620)
         MaterialButton1.Margin = New Padding(4, 6, 4, 6)
         MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton1.Name = "MaterialButton1"
@@ -214,7 +219,7 @@ Partial Class TaskEntry
         MaterialButton2.Depth = 0
         MaterialButton2.HighEmphasis = True
         MaterialButton2.Icon = Nothing
-        MaterialButton2.Location = New Point(408, 614)
+        MaterialButton2.Location = New Point(835, 620)
         MaterialButton2.Margin = New Padding(4, 6, 4, 6)
         MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton2.Name = "MaterialButton2"
@@ -232,18 +237,38 @@ Partial Class TaskEntry
         MaterialLabel5.Depth = 0
         MaterialLabel5.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
         MaterialLabel5.ForeColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        MaterialLabel5.Location = New Point(307, 561)
+        MaterialLabel5.Location = New Point(734, 567)
         MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel5.Name = "MaterialLabel5"
         MaterialLabel5.Size = New Size(183, 19)
         MaterialLabel5.TabIndex = 13
         MaterialLabel5.Text = "Task Added Successfully!"
         ' 
+        ' Guna2PictureBox1
+        ' 
+        Guna2PictureBox1.BackColor = Color.White
+        Guna2PictureBox1.BackgroundImage = CType(resources.GetObject("Guna2PictureBox1.BackgroundImage"), Image)
+        Guna2PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
+        Guna2PictureBox1.CustomizableEdges = CustomizableEdges1
+        Guna2PictureBox1.FillColor = Color.Transparent
+        Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), Image)
+        Guna2PictureBox1.ImageLocation = "10"
+        Guna2PictureBox1.ImageRotate = 0F
+        Guna2PictureBox1.InitialImage = CType(resources.GetObject("Guna2PictureBox1.InitialImage"), Image)
+        Guna2PictureBox1.Location = New Point(-1, -1)
+        Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Guna2PictureBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2PictureBox1.Size = New Size(536, 717)
+        Guna2PictureBox1.TabIndex = 14
+        Guna2PictureBox1.TabStop = False
+        ' 
         ' TaskEntry
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(783, 698)
+        BackColor = Color.FromArgb(CByte(235), CByte(245), CByte(238))
+        ClientSize = New Size(1098, 713)
+        Controls.Add(Guna2PictureBox1)
         Controls.Add(MaterialLabel5)
         Controls.Add(MaterialButton2)
         Controls.Add(MaterialButton1)
@@ -258,6 +283,7 @@ Partial Class TaskEntry
         Controls.Add(MaterialLabel1)
         Name = "TaskEntry"
         Text = "TaskEntry"
+        CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -274,4 +300,5 @@ Partial Class TaskEntry
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

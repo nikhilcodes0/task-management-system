@@ -236,7 +236,7 @@ Partial Class TaskEdit
         MaterialButton1.NoAccentTextColor = Color.Empty
         MaterialButton1.Size = New Size(130, 36)
         MaterialButton1.TabIndex = 11
-        MaterialButton1.Text = "Add Task"
+        MaterialButton1.Text = "Edit Task"
         MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
         MaterialButton1.UseAccentColor = False
         MaterialButton1.UseVisualStyleBackColor = True
@@ -265,6 +265,7 @@ Partial Class TaskEdit
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(235), CByte(245), CByte(238))
         ClientSize = New Size(858, 828)
         Controls.Add(MaterialButton2)
         Controls.Add(MaterialButton1)
