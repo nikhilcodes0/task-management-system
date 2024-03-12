@@ -22,6 +22,7 @@ Partial Class TaskEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TaskEdit))
         MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Label1 = New Label()
         MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
@@ -35,6 +36,8 @@ Partial Class TaskEdit
         MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
         MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
         MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MaterialLabel1
@@ -42,7 +45,7 @@ Partial Class TaskEdit
         MaterialLabel1.AutoSize = True
         MaterialLabel1.Depth = 0
         MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(202, 81)
+        MaterialLabel1.Location = New Point(691, 91)
         MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel1.Name = "MaterialLabel1"
         MaterialLabel1.Size = New Size(55, 19)
@@ -52,10 +55,10 @@ Partial Class TaskEdit
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 22F, FontStyle.Underline)
-        Label1.Location = New Point(272, 9)
+        Label1.Font = New Font("Ink Free", 22F, FontStyle.Bold Or FontStyle.Underline)
+        Label1.Location = New Point(761, 19)
         Label1.Name = "Label1"
-        Label1.Size = New Size(222, 41)
+        Label1.Size = New Size(242, 37)
         Label1.TabIndex = 1
         Label1.Text = "Edit your Tasks!"
         ' 
@@ -73,7 +76,7 @@ Partial Class TaskEdit
         MaterialComboBox1.FormattingEnabled = True
         MaterialComboBox1.IntegralHeight = False
         MaterialComboBox1.ItemHeight = 43
-        MaterialComboBox1.Location = New Point(202, 116)
+        MaterialComboBox1.Location = New Point(691, 126)
         MaterialComboBox1.MaxDropDownItems = 4
         MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox1.Name = "MaterialComboBox1"
@@ -86,7 +89,7 @@ Partial Class TaskEdit
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(202, 206)
+        MaterialLabel2.Location = New Point(691, 216)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
         MaterialLabel2.Size = New Size(120, 19)
@@ -100,7 +103,7 @@ Partial Class TaskEdit
         MaterialMultiLineTextBox21.CharacterCasing = CharacterCasing.Normal
         MaterialMultiLineTextBox21.Depth = 0
         MaterialMultiLineTextBox21.HideSelection = True
-        MaterialMultiLineTextBox21.Location = New Point(202, 228)
+        MaterialMultiLineTextBox21.Location = New Point(691, 238)
         MaterialMultiLineTextBox21.MaxLength = 32767
         MaterialMultiLineTextBox21.MouseState = MaterialSkin.MouseState.OUT
         MaterialMultiLineTextBox21.Name = "MaterialMultiLineTextBox21"
@@ -122,7 +125,7 @@ Partial Class TaskEdit
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(202, 356)
+        MaterialLabel3.Location = New Point(691, 366)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
         MaterialLabel3.Size = New Size(89, 19)
@@ -143,7 +146,7 @@ Partial Class TaskEdit
         MaterialComboBox2.FormattingEnabled = True
         MaterialComboBox2.IntegralHeight = False
         MaterialComboBox2.ItemHeight = 43
-        MaterialComboBox2.Location = New Point(202, 378)
+        MaterialComboBox2.Location = New Point(691, 388)
         MaterialComboBox2.MaxDropDownItems = 4
         MaterialComboBox2.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox2.Name = "MaterialComboBox2"
@@ -166,7 +169,7 @@ Partial Class TaskEdit
         MaterialComboBox3.IntegralHeight = False
         MaterialComboBox3.ItemHeight = 43
         MaterialComboBox3.Items.AddRange(New Object() {"Not started", "In Progress", "Done"})
-        MaterialComboBox3.Location = New Point(202, 494)
+        MaterialComboBox3.Location = New Point(691, 504)
         MaterialComboBox3.MaxDropDownItems = 4
         MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox3.Name = "MaterialComboBox3"
@@ -179,7 +182,7 @@ Partial Class TaskEdit
         MaterialLabel4.AutoSize = True
         MaterialLabel4.Depth = 0
         MaterialLabel4.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel4.Location = New Point(202, 459)
+        MaterialLabel4.Location = New Point(691, 469)
         MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel4.Name = "MaterialLabel4"
         MaterialLabel4.Size = New Size(86, 19)
@@ -201,7 +204,7 @@ Partial Class TaskEdit
         MaterialComboBox4.IntegralHeight = False
         MaterialComboBox4.ItemHeight = 43
         MaterialComboBox4.Items.AddRange(New Object() {"Low", "Medium", "ASAP"})
-        MaterialComboBox4.Location = New Point(202, 605)
+        MaterialComboBox4.Location = New Point(691, 615)
         MaterialComboBox4.MaxDropDownItems = 4
         MaterialComboBox4.MouseState = MaterialSkin.MouseState.OUT
         MaterialComboBox4.Name = "MaterialComboBox4"
@@ -214,7 +217,7 @@ Partial Class TaskEdit
         MaterialLabel5.AutoSize = True
         MaterialLabel5.Depth = 0
         MaterialLabel5.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel5.Location = New Point(202, 570)
+        MaterialLabel5.Location = New Point(691, 580)
         MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel5.Name = "MaterialLabel5"
         MaterialLabel5.Size = New Size(90, 19)
@@ -229,7 +232,7 @@ Partial Class TaskEdit
         MaterialButton1.Depth = 0
         MaterialButton1.HighEmphasis = True
         MaterialButton1.Icon = Nothing
-        MaterialButton1.Location = New Point(192, 733)
+        MaterialButton1.Location = New Point(716, 743)
         MaterialButton1.Margin = New Padding(4, 6, 4, 6)
         MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton1.Name = "MaterialButton1"
@@ -249,24 +252,35 @@ Partial Class TaskEdit
         MaterialButton2.Depth = 0
         MaterialButton2.HighEmphasis = True
         MaterialButton2.Icon = Nothing
-        MaterialButton2.Location = New Point(423, 733)
+        MaterialButton2.Location = New Point(915, 743)
         MaterialButton2.Margin = New Padding(4, 6, 4, 6)
         MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialButton2.Name = "MaterialButton2"
         MaterialButton2.NoAccentTextColor = Color.Empty
-        MaterialButton2.Size = New Size(158, 36)
+        MaterialButton2.Size = New Size(127, 36)
         MaterialButton2.TabIndex = 12
         MaterialButton2.Text = "Cancel"
         MaterialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
         MaterialButton2.UseAccentColor = False
         MaterialButton2.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(1, 1)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(649, 827)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 13
+        PictureBox1.TabStop = False
+        ' 
         ' TaskEdit
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(235), CByte(245), CByte(238))
-        ClientSize = New Size(858, 828)
+        ClientSize = New Size(1119, 828)
+        Controls.Add(PictureBox1)
         Controls.Add(MaterialButton2)
         Controls.Add(MaterialButton1)
         Controls.Add(MaterialComboBox4)
@@ -282,6 +296,7 @@ Partial Class TaskEdit
         Controls.Add(MaterialLabel1)
         Name = "TaskEdit"
         Text = "TaskEdit"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -299,4 +314,5 @@ Partial Class TaskEdit
     Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
