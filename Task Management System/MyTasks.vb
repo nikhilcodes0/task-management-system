@@ -32,11 +32,6 @@ Public Class MyTasks
 
         End Using
     End Sub
-
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-
-    End Sub
-
     Private Sub MaterialButton2_Click(sender As Object, e As EventArgs) Handles MaterialButton2.Click
         Me.Close()
         MenuBAr.Show()
@@ -45,13 +40,5 @@ Public Class MyTasks
     Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
         TaskEdit.Show()
         Me.Close()
-    End Sub
-
-    Private Sub MaterialLabel1_Click(sender As Object, e As EventArgs) Handles MaterialLabel1.Click
-
-    End Sub
-
-    Private Sub MaterialLabel2_Click(sender As Object, e As EventArgs) Handles MaterialLabel2.Click
-
     End Sub
 End Class

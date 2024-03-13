@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Task Management System"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85c225e833240946e873ae90ca8be6d50dd5a5db"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f9d65ea0e4617b1ae73eff616d7b4ecf8605805"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Task Management System"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Task Management System"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

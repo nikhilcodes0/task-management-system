@@ -35,26 +35,21 @@ Public Class MenuBAr
         Me.Close()
     End Sub
 
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
-
-    End Sub
 
     Private Sub IncompleteTasksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IncompleteTasksToolStripMenuItem.Click
         IncompleteTasks.Show()
         Me.Close()
     End Sub
-    'Private Sub MaterialTextBox1_TextChanged(sender As Object, e As EventArgs) Handles MaterialTextBox1.TextChanged
 
-    'End Sub
-    'Private Sub MenuBAr_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub CompletedTasksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompletedTasksToolStripMenuItem.Click
+        CompletedTasks.Show()
+        Me.Close()
 
-    'End Sub
+    End Sub
 
-    'Private Sub Guna2ContextMenuStrip1_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles Guna2ContextMenuStrip1.Opening
+    Private Sub TeamOverviewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TeamOverviewToolStripMenuItem.Click
+        UserProfile.Show()
+        Me.Close()
 
-    'End Sub
-
-    'Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
-
-    'End Sub
+    End Sub
 End Class

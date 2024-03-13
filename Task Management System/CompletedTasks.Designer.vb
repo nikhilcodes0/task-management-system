@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MenuBAr
+Partial Class CompletedTasks
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,69 +25,22 @@ Partial Class MenuBAr
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        MenuStrip1 = New MenuStrip()
-        TaskDetailsToolStripMenuItem = New ToolStripMenuItem()
-        TaskEntryToolStripMenuItem = New ToolStripMenuItem()
-        IncompleteTasksToolStripMenuItem = New ToolStripMenuItem()
-        CompletedTasksToolStripMenuItem = New ToolStripMenuItem()
-        TeamOverviewToolStripMenuItem = New ToolStripMenuItem()
-        MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Label1 = New Label()
         Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        MenuStrip1.SuspendLayout()
+        MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' MenuStrip1
+        ' Label1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {TaskDetailsToolStripMenuItem, TaskEntryToolStripMenuItem, IncompleteTasksToolStripMenuItem, CompletedTasksToolStripMenuItem, TeamOverviewToolStripMenuItem})
-        MenuStrip1.Location = New Point(0, 0)
-        MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(800, 24)
-        MenuStrip1.TabIndex = 2
-        MenuStrip1.Text = "MenuStrip1"
-        ' 
-        ' TaskDetailsToolStripMenuItem
-        ' 
-        TaskDetailsToolStripMenuItem.Name = "TaskDetailsToolStripMenuItem"
-        TaskDetailsToolStripMenuItem.Size = New Size(66, 20)
-        TaskDetailsToolStripMenuItem.Text = "My Tasks"
-        ' 
-        ' TaskEntryToolStripMenuItem
-        ' 
-        TaskEntryToolStripMenuItem.Name = "TaskEntryToolStripMenuItem"
-        TaskEntryToolStripMenuItem.Size = New Size(71, 20)
-        TaskEntryToolStripMenuItem.Text = "Task Entry"
-        ' 
-        ' IncompleteTasksToolStripMenuItem
-        ' 
-        IncompleteTasksToolStripMenuItem.Name = "IncompleteTasksToolStripMenuItem"
-        IncompleteTasksToolStripMenuItem.Size = New Size(109, 20)
-        IncompleteTasksToolStripMenuItem.Text = "Incomplete Tasks"
-        ' 
-        ' CompletedTasksToolStripMenuItem
-        ' 
-        CompletedTasksToolStripMenuItem.Name = "CompletedTasksToolStripMenuItem"
-        CompletedTasksToolStripMenuItem.Size = New Size(108, 20)
-        CompletedTasksToolStripMenuItem.Text = "Completed Tasks"
-        ' 
-        ' TeamOverviewToolStripMenuItem
-        ' 
-        TeamOverviewToolStripMenuItem.Name = "TeamOverviewToolStripMenuItem"
-        TeamOverviewToolStripMenuItem.Size = New Size(73, 20)
-        TeamOverviewToolStripMenuItem.Text = "My Profile"
-        ' 
-        ' MaterialLabel1
-        ' 
-        MaterialLabel1.AutoSize = True
-        MaterialLabel1.Depth = 0
-        MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel1.Location = New Point(328, 173)
-        MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        MaterialLabel1.Name = "MaterialLabel1"
-        MaterialLabel1.Size = New Size(114, 19)
-        MaterialLabel1.TabIndex = 4
-        MaterialLabel1.Text = "There no Tasks!"
+        Label1.AutoSize = True
+        Label1.Font = New Font("Ink Free", 16F, FontStyle.Bold)
+        Label1.Location = New Point(284, 31)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(185, 27)
+        Label1.TabIndex = 0
+        Label1.Text = "Completed Tasks"
         ' 
         ' Guna2DataGridView1
         ' 
@@ -97,8 +50,6 @@ Partial Class MenuBAr
         Guna2DataGridView1.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = Color.White
         Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Guna2DataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders
-        Guna2DataGridView1.BackgroundColor = SystemColors.Control
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
         DataGridViewCellStyle2.Font = New Font("Segoe UI", 16F)
@@ -107,43 +58,36 @@ Partial Class MenuBAr
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
         Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Guna2DataGridView1.ColumnHeadersHeight = 45
+        Guna2DataGridView1.ColumnHeadersHeight = 35
+        Guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Segoe UI", 12F)
         DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.True
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Guna2DataGridView1.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.Location = New Point(12, 27)
+        Guna2DataGridView1.Location = New Point(12, 61)
         Guna2DataGridView1.Name = "Guna2DataGridView1"
         Guna2DataGridView1.ReadOnly = True
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = SystemColors.Control
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 12F)
-        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Guna2DataGridView1.RowHeadersVisible = False
-        Guna2DataGridView1.Size = New Size(776, 398)
-        Guna2DataGridView1.TabIndex = 5
+        Guna2DataGridView1.Size = New Size(776, 287)
+        Guna2DataGridView1.TabIndex = 1
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
-        Guna2DataGridView1.ThemeStyle.BackColor = SystemColors.Control
+        Guna2DataGridView1.ThemeStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
         Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
         Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F)
         Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 45
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 35
         Guna2DataGridView1.ThemeStyle.ReadOnly = True
         Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
@@ -153,29 +97,56 @@ Partial Class MenuBAr
         Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' MenuBAr
+        ' MaterialButton1
+        ' 
+        MaterialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default
+        MaterialButton1.Depth = 0
+        MaterialButton1.HighEmphasis = True
+        MaterialButton1.Icon = Nothing
+        MaterialButton1.Location = New Point(324, 378)
+        MaterialButton1.Margin = New Padding(4, 6, 4, 6)
+        MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialButton1.Name = "MaterialButton1"
+        MaterialButton1.NoAccentTextColor = Color.Empty
+        MaterialButton1.Size = New Size(66, 36)
+        MaterialButton1.TabIndex = 2
+        MaterialButton1.Text = "Close"
+        MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        MaterialButton1.UseAccentColor = False
+        MaterialButton1.UseVisualStyleBackColor = True
+        ' 
+        ' MaterialLabel1
+        ' 
+        MaterialLabel1.AutoSize = True
+        MaterialLabel1.Depth = 0
+        MaterialLabel1.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel1.Location = New Point(259, 185)
+        MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel1.Name = "MaterialLabel1"
+        MaterialLabel1.Size = New Size(257, 19)
+        MaterialLabel1.TabIndex = 3
+        MaterialLabel1.Text = "You dont have any completed tasks!"
+        MaterialLabel1.Visible = False
+        ' 
+        ' CompletedTasks
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(MaterialLabel1)
-        Controls.Add(MenuStrip1)
+        Controls.Add(MaterialButton1)
         Controls.Add(Guna2DataGridView1)
-        MainMenuStrip = MenuStrip1
-        Name = "MenuBAr"
-        Text = "MenuBAr"
-        MenuStrip1.ResumeLayout(False)
-        MenuStrip1.PerformLayout()
+        Controls.Add(Label1)
+        Name = "CompletedTasks"
+        Text = "CompletedTasks"
         CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents TaskDetailsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TaskEntryToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+
+    Friend WithEvents Label1 As Label
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents IncompleteTasksToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CompletedTasksToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TeamOverviewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
 End Class
